@@ -24,8 +24,6 @@ test.describe('Cookie Clicker Dashboard Tests', () => {
     });
 
     test('Verify that player can create a game profile by adding name', async({page})=>{
-        // var randomPlayer = require('node-random-name');
-        // var playerName = randomPlayer.randomPlayerName();
         const names = require("random-names-generator");
         var randPlayer = names.random();
         const cookieClickerDashboardPage = new CookieClickerDashboardPage(page);
